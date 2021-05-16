@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* html,
+* body {
+  width: 100%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+* html .main-container,
+* body .main-container {
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff9472), to(#f2709c));
+  background: linear-gradient(to bottom, #ff9472, #f2709c);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+* html .main-container .inner-container,
+* body .main-container .inner-container {
+  width: 60%;
+  min-height: 80vh;
+  background: whitesmoke;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(187, 166, 166, 0.35) 0px 5px 15px;
+          box-shadow: rgba(187, 166, 166, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+* html .main-container .inner-container .player-0,
+* body .main-container .inner-container .player-0 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+}
+
+* html .main-container .inner-container .active,
+* body .main-container .inner-container .active {
+  background: #eee1e9;
+}
+
+* html .main-container .inner-container .player-1,
+* body .main-container .inner-container .player-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+}
+
+* html .main-container .inner-container #player-center,
+* body .main-container .inner-container #player-center {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+* html .main-container .inner-container #player-center .score-0, * html .main-container .inner-container #player-center .score-1,
+* body .main-container .inner-container #player-center .score-0,
+* body .main-container .inner-container #player-center .score-1 {
+  text-align: center;
+  line-height: 120px;
+  font-size: 80px;
+}
+
+* html .main-container .inner-container #player-center .current,
+* body .main-container .inner-container #player-center .current {
+  width: auto;
+  padding: 10px;
+  background: #c5103e;
+  text-align: center;
+  color: blanchedalmond;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+* html .main-container .inner-container .new-game,
+* body .main-container .inner-container .new-game {
+  position: absolute;
+  right: calc(50% - 50px);
+  top: 40px;
+  cursor: pointer;
+}
+
+* html .main-container .inner-container .dice-img,
+* body .main-container .inner-container .dice-img {
+  width: 120px;
+  position: absolute;
+  right: calc(50% - 60px);
+  top: 150px;
+}
+
+* html .main-container .inner-container .dice-img .img,
+* body .main-container .inner-container .dice-img .img {
+  width: 100%;
+}
+
+* html .main-container .inner-container .roll-dice,
+* body .main-container .inner-container .roll-dice {
+  position: absolute;
+  right: calc(50% - 40px);
+  top: 400px;
+  cursor: pointer;
+}
+
+* html .main-container .inner-container .btn-hold,
+* body .main-container .inner-container .btn-hold {
+  position: absolute;
+  right: calc(50% - 20px);
+  top: 450px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  * html .main-container .inner-container,
+  * body .main-container .inner-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  * html .main-container .player-0,
+  * body .main-container .player-0 {
+    font-size: 12px !important;
+  }
+  * html .main-container .player-1,
+  * body .main-container .player-1 {
+    font-size: 12px !important;
+  }
+  * html .main-container .inner-container .dice-img,
+  * body .main-container .inner-container .dice-img {
+    position: absolute;
+    right: calc(50% - 90px);
+    top: 150px;
+    margin: 0 10px;
+  }
+  * html .main-container .inner-container .dice-img .img,
+  * body .main-container .inner-container .dice-img .img {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
